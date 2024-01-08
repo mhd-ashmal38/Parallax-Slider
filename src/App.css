@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+.background {
+  inset: 0;
+  z-index: 0;
+  position: absolute;
+  background-image: url(./image-full.png);
+}
+
+.background2 {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  background-image: url(./image-bottom.png);
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.main h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
+.paral {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.text-div {
+  background: #06141D;
+}
+
+/* .text {
+  max-width: 1024px;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(212 212 212);
+}  */
+
+
+.item {
+  max-height: 28rem;
+  min-width: 22rem;
+  padding: 20px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inner-carousel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5% 10%;
+} 
+
+.carousel{
+  cursor: grab;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+
+.content h1{
+  font-size: 2.5rem;
+  color: #ffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content p{
+  font-size: 1.2rem;
+  color: darkgray;
+  text-align: justify;
+}
+
+
+/* 4k pc */
+
+@media screen and (min-width:2550px) {
+  
+  .main h1 {
+    font-size: 10rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .content h1{
+    font-size: 4.5rem;
+  }
+  
+  .content p{
+    font-size: 2.2rem;
+  }
+  
+  .item {
+    max-height: 58rem;
+    min-width: 40rem;
+  }
+
+}
+
+/* laptop  L*/
+@media screen and (min-width:1435px) and (max-width:2549px){
+  .main h1 {
+    font-size: 6.5rem;
+  }
+}
+
+/* mobile L */
+@media screen and (min-width:376px) and (max-width:720px){
+  .main h1 {
+    font-size: 4rem;
+  }
+
+  .content h1{
+    font-size: 2.5rem;
+  }
+  
+  .content p{
+    font-size: 1.2rem;
+  }
+  
+  .item {
+    max-height: 25rem;
+    min-width: 20rem;
+  }
+}
+
+
+/* mobile M */
+@media screen and (max-width:375px){
+  .main h1 {
+    font-size: 3rem;
+  }
+
+  .content h1{
+    font-size: 1.6rem;
+  }
+  
+  .content p{
+    font-size: 0.8rem;
+  }
+  
+  .item {
+    max-height: 25rem;
+    min-width: 19rem;
   }
 }
