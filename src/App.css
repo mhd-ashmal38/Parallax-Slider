@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* parallaxhome */
 .background {
   inset: 0;
   z-index: 0;
@@ -40,19 +41,14 @@
   z-index: 10;
 }
 
+
+/* content */
 .text-div {
   background: #06141D;
 }
 
-/* .text {
-  max-width: 1024px;
-  margin-right: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: rgb(212 212 212);
-}  */
 
-
+/* slider */
 .item {
   max-height: 28rem;
   min-width: 22rem;
@@ -86,6 +82,13 @@
   font-size: 1.2rem;
   color: darkgray;
   text-align: justify;
+}
+
+
+/* places */
+.places h1{
+  font-size: 2.5rem;
+  color: #000000;
 }
 
 
@@ -157,5 +160,12 @@
   .item {
     max-height: 25rem;
     min-width: 19rem;
+  }
+}
+
+@media screen and (max-width:479px){
+  .slider{
+    padding-left: 20%;
+    padding-right: 25%;
   }
 }

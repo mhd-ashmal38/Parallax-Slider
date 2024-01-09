@@ -23,6 +23,7 @@ function ParallaxHome() {
             >
                 <h1>MOUNTAINS</h1>
             </motion.h1>
+
             <motion.div
                 className="background"
                 style={{
@@ -31,10 +32,10 @@ function ParallaxHome() {
                     y: backgroundY,
                 }}
             />
+
             <div
                 className="background2"
                 style={{
-                    
                     backgroundPosition: "bottom",
                     backgroundSize: "cover",
                 }}
